@@ -1,0 +1,24 @@
+# Read the RTL
+read_verilog -sv ../rtl/agr_spi_bridge.sv
+
+# Set top module
+hierarchy -top agr_spi_bridge
+
+# Generic synthesis (no target, just logic optimization)
+proc
+flatten
+opt
+fsm
+opt
+
+# Show statistics before tech mapping
+stat
+
+# Tech mapping to iCE40 (real FPGA target)
+synth_ice40 -top agr_spi_bridge
+
+# Final statistics
+stat
+
+# Write outputs
+write_verilog agr_spi_bridge_synth.v
