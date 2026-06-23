@@ -54,13 +54,13 @@ and what's still a folder waiting for code.
 ```
 rtl/
 ├── communication/
-│   ├── spi/agr_spi_bridge/   ✅ implemented + verified
+│   ├── spi/agr_spi_bridge/    implemented + verified
 │   └── can/ ethernet/ i2c/ uart/             planned
 ├── control/                  planned: pid · pwm · encoder · sigma_delta
 ├── dsp/                      planned: cic · cordic · fft · fir · nco · filters
 ├── infrastructure/           planned: cdc · clocking · pipeline · reset · synchronizers
 ├── math/
-│   ├── fixed_point/          ✅ addsub · mult · resize · round
+│   ├── fixed_point/           addsub · mult · resize · round
 │   ├── divider/ multiplier/ sqrt/            planned
 ├── memory/                   planned: bram · fifo · rom · sram
 └── sensors/                  planned: capture · pulse_counter · quadrature · timestamp
