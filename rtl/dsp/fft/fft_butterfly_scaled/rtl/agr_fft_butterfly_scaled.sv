@@ -2,7 +2,7 @@
 // AGR-FPGA-IP-Library : agr_fft_butterfly_scaled
 // -----------------------------------------------------------------------------
 // Project   : AGR-FFT-BUTTERFLY-SCALED (radix-2 FFT butterfly with 1/2 scaling)
-// Author    : Agrionics Co.
+// Author    : Agrionics Co.| Kopano Maketekete
 // Standard  : IEEE 1800-2017 SystemVerilog
 // -----------------------------------------------------------------------------
 // PURPOSE
