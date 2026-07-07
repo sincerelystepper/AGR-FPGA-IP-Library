@@ -67,35 +67,35 @@ AGR-FPGA-IP-Library/
 ├── rtl/
 │   ├── communication/
 │   │   └── spi/
-│   │       └── agr_spi_bridge/          ✅ RTL + C++ TB + Yosys synthesis (iCE40, 146 cells)
+│   │       └── agr_spi_bridge/           RTL + C++ TB + Yosys synthesis (iCE40, 146 cells)
 │   │
 │   ├── math/
 │   │   ├── fixed_point/
-│   │   │   ├── addsub/                  ✅ verified
-│   │   │   ├── mult/                    ✅ verified
-│   │   │   ├── resize/                  ✅ verified
-│   │   │   ├── round/                   ✅ verified
-│   │   │   ├── mac/                     ✅ verified
-│   │   │   ├── acc/                     ✅ verified (stateful — first sequential core)
-│   │   │   └── shift/                   ✅ verified
+│   │   │   ├── addsub/                   verified
+│   │   │   ├── mult/                     verified
+│   │   │   ├── resize/                   verified
+│   │   │   ├── round/                    verified
+│   │   │   ├── mac/                      verified
+│   │   │   ├── acc/                      verified (stateful — first sequential core)
+│   │   │   └── shift/                    verified
 │   │   └── complex/
-│   │       ├── complex_mult/            ✅ verified
-│   │       └── complex_addsub/          ✅ verified
+│   │       ├── complex_mult/             verified
+│   │       └── complex_addsub/           verified
 │   │
 │   └── dsp/
 │       └── fft/
-│           ├── twiddle_rom/             ✅ verified (Q1.14 fixed-point, N-parameterised)
-│           ├── fft_butterfly/           ✅ verified (unscaled radix-2)
-│           ├── fft_butterfly_scaled/    ✅ verified (÷2 scaling, precision-loss tracking)
-│           ├── fft_stage/               ✅ verified (N/2 butterflies in parallel)
-│           └── agr_fft_radix2/          ✅ verified (complete N-point radix-2 DIT FFT)
+│           ├── twiddle_rom/              verified (Q1.14 fixed-point, N-parameterised)
+│           ├── fft_butterfly/            verified (unscaled radix-2)
+│           ├── fft_butterfly_scaled/     verified (÷2 scaling, precision-loss tracking)
+│           ├── fft_stage/                verified (N/2 butterflies in parallel)
+│           └── agr_fft_radix2/           verified (complete N-point radix-2 DIT FFT)
 │
 ├── docs/                                ⚙️  stubs — architecture, coding guidelines, etc.
 ├── scripts/                             ⚙️  ci · lint · simulation · synthesis (folders exist)
 └── examples/                            ⚙️  planned
 ```
 
-Legend: ✅ RTL + self-checking testbench verified   ⚙️ planned / in progress
+Legend:  RTL + self-checking testbench verified   ⚙️ planned / in progress
 
 ---
 
